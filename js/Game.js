@@ -109,14 +109,14 @@ class Game {
     form.titleImg.position(40, 50);
     form.titleImg.class("gameTitleAfterEffect");
 
-    this.resetTitle.html("Reset Game");
+    this.resetTitle.html("Reiniciar juego");
     this.resetTitle.class("resetText");
     this.resetTitle.position(width / 2 + 200, 40);
 
     this.resetButton.class("resetButton");
     this.resetButton.position(width / 2 + 230, 100);
 
-    this.leadeboardTitle.html("Leaderboard");
+    this.leadeboardTitle.html("Tabla de posiciones");
     this.leadeboardTitle.class("resetText");
     this.leadeboardTitle.position(width / 3 - 60, 40);
 
@@ -394,8 +394,8 @@ class Game {
 
   showRank() {
     swal({
-      title: `Awesome!${"\n"}Rank${"\n"}${player.rank}`,
-      text: "You reached the finish line successfully",
+      title: `¡Asombroso!${"\n"}Lugar${"\n"}${player.rank}`,
+      text: "Llegaste a la linea final exitosamente.",
       imageUrl:
         "https://raw.githubusercontent.com/vishalgaddam873/p5-multiplayer-car-race-game/master/assets/cup.png",
       imageSize: "100x100",
@@ -405,15 +405,15 @@ class Game {
 
   gameOver() {
     swal({
-      title: `Game Over`,
-      text: "Oops you lost the race....!!!",
+      title: `Juego acabado`,
+      text: "¡Ups! Perdiste la carrera",
       imageUrl:
         "https://cdn.shopify.com/s/files/1/1061/1924/products/Thumbs_Down_Sign_Emoji_Icon_ios10_grande.png",
       imageSize: "100x100",
-      confirmButtonText: "Thanks For Playing"
+      confirmButtonText: "Gracias por jugar"
     });
   }
   end() {
-    console.log("Game Over");
+    console.log("Juego acabado");
   }
 }
